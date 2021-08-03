@@ -6,13 +6,13 @@ import java.util.List;
 
 public interface CustomerService {
 
-    void save(Customer customer);
+    Customer save(Customer customer);
 
     List<Customer> listAll();
 
-    public Customer get(Long id);
+    Customer get(Long id);
 
-    public void delete(Long id);
+    void delete(Long id);
 
-    public List<Customer> findByKeyword(String keyword);
+    List<Customer> findByKeyword(String keyword);
 }
